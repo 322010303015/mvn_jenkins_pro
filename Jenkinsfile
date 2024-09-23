@@ -29,7 +29,7 @@ pipeline
             steps
             {
                 sh '''
-                    java -jar MavenProject-0.0.3-SNAPSHOT
+                    java -jar MavenProject-0.0.3-SNAPSHOT.jar
                 '''
             }
         }
