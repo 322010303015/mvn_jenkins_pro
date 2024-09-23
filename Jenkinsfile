@@ -8,7 +8,7 @@ pipeline
             steps
             {
                 echo "check pom file!"
-                sh '''
+                bat '''
                     mvn validate
                 '''
                 
@@ -18,7 +18,7 @@ pipeline
         {
             steps
             {
-                sh '''
+                bat '''
                     echo "createting jar"
                     mvn package
                 '''
@@ -28,7 +28,7 @@ pipeline
         {
             steps
             {
-                sh '''
+                bat '''
                     java -jar target/MavenProject-0.0.3-SNAPSHOT.jar
                 '''
             }
